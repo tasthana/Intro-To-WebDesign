@@ -116,7 +116,7 @@
             <h2>Appreciate it</h2>
             <?php
             print'<p>Post Array:</p><pre>';
-            print_r($ POST);
+            print_r($_POST);
             print '</pre>';
             ?>
             </section> 
