@@ -1,1 +1,52 @@
 
+
+:root{
+    --main-bg-color-rgba: #7f976b;
+    --main-text-color: #ffffff; 
+    --background-odd: #6581ff; 
+    --background-even: #6a75a5;
+}
+
+*{
+    margin: 5%;
+    padding: 0%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+body{
+    width: 90%;
+    margin: auto;
+    background-color: var(--main-bg-color-rgba);
+    color: var(--main-text-color);
+}
+
+header h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+header h2 {
+    text-align: center;
+}
+
+figure{
+    float: left; 
+    text-align: center; 
+    width:20%;
+}
+
+img{
+   max-width: 100%;
+}
+
+nav, footer{
+    background-color: var(--main-bg-color-rgba); 
+    padding: 1% 0;
+    text-align: center;
+}
+
+p{
+    text-indent: 5%;
+}
+
+
