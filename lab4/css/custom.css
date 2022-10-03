@@ -53,10 +53,6 @@ nav, footer{
     text-align: center;
 }
 
-nav a:hover{
-    text-decoration: underline;
-    background-color: rgb(216, 216, 124);
-  }
   footer:hover { 
     background-color: rgb(216, 216, 124);
   }
@@ -110,3 +106,25 @@ figcaption{
     float: right;
     margin-left: 1em;
 }
+
+nav a:link{
+    background-color: #fff;
+    color: #009;
+    text-decoration: none;
+  }
+
+nav a{
+    display: inline-block;
+    width: 19%;
+}
+
+nav {
+    border: thin solid yellow;
+    background-color: white;
+    text-align: center;
+}
+
+nav :hover{
+    text-decoration: underline;
+    background-color: rgb(14, 14, 8);
+  }
