@@ -124,7 +124,53 @@ nav {
     text-align: center;
 }
 
-nav :hover{
+nav:hover{
     text-decoration: underline;
     background-color: rgb(14, 14, 8);
   }
+
+table{
+    border: 10% solid;
+    border-collapse: collapse;
+    max-width: 80%;
+    margin: auto;
+  }
+
+  td, th{
+      border: thin solid black
+  }
+
+caption{
+    font-variant: small-caps;
+    font-weight: bold;
+    padding-top: 1%;
+}
+
+  tr:nth-child(odd){
+      background-color: var(--background-odd)
+  }
+
+  tr:nth-child(even){
+    background-color: var(--background-even)
+}
+
+li:nth-child(odd){
+    background-color: var(--background-odd)
+}
+
+li:nth-child(even){
+    background-color: var(--background-even)
+}
+
+ol{
+    margin-left: 50%;
+    padding-left: .05;
+}
+
+form:first-line{
+    text-decoration: underline;
+}
+
+form{
+    float:none;
+}
