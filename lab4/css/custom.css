@@ -69,4 +69,44 @@ p{
     text-indent: 5%;
 }
 
+cite{
+    font-size: xx-small;
+}
 
+figure {
+    border: 1% solid rgb(18, 20, 19);
+    padding: 10%;
+    font-size: smaller;
+    
+}
+figure {
+    width: 30%;
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+    text-indent: 0;
+    border: thin silver solid;
+    margin: 0.5em;
+    padding: 0.5em;
+  }
+  img.scaled {
+    width: 100%;
+  }
+
+figcaption{
+    font-size: medium;
+    color: black;
+}
+
+.rounded{
+    border-radius: 2%;
+}
+
+.go-left{
+    float: left;
+    margin-right: 1em;
+}
+.go-right{
+    float: right;
+    margin-left: 1em;
+}
