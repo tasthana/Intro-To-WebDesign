@@ -1,0 +1,176 @@
+
+
+:root{
+    --main-bg-color-rgba: #7f976b;
+    --main-bg-color: whitesmoke;
+    --main-text-color: #ffffff; 
+    --background-odd: #6581ff; 
+    --background-even: #6a75a5;
+}
+
+*{
+    margin: 5%;
+    padding: 0%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+html{
+    background-image: url(../images/bg.jpg);
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    
+}
+
+body{
+    width: 90%;
+    margin: auto;
+    background-color: var(--main-bg-color-rgba);
+    color: var(--main-text-color);
+    opacity: .8;
+}
+
+header h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+header h2 {
+    text-align: center;
+}
+
+figure{
+    float: left; 
+    text-align: center; 
+    width:20%;
+}
+
+img{
+   max-width: 100%;
+}
+
+nav, footer{
+    background-color: var(--main-bg-color-rgba); 
+    padding: 1% 0;
+    text-align: center;
+}
+
+  footer:hover { 
+    background-color: rgb(216, 216, 124);
+  }
+  a:hover{
+    background-color: rgb(216, 216, 124); 
+ }
+
+
+p{
+    text-indent: 5%;
+}
+
+cite{
+    font-size: xx-small;
+}
+
+figure {
+    border: 1px solid rgb(18, 20, 19);
+    padding: 10%;
+    font-size: smaller;
+    
+}
+figure {
+    width: 30%;
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+    text-indent: 0;
+    border: thin silver solid;
+    margin: 0.5em;
+    padding: 0.5em;
+  }
+  img.scaled {
+    width: 100%;
+  }
+
+figcaption{
+    font-size: medium;
+    color: black;
+}
+
+.rounded{
+    border-radius: 2%;
+}
+
+.go-left{
+    float: left;
+    margin-right: 1em;
+}
+.go-right{
+    float: right;
+    margin-left: 1em;
+}
+
+nav a:link{
+    background-color: #fff;
+    color: #009;
+    text-decoration: none;
+  }
+
+nav a{
+    display: inline-block;
+    width: 19%;
+}
+
+nav {
+    border: thin solid yellow;
+    background-color: white;
+    text-align: center;
+}
+
+nav:hover{
+    text-decoration: underline;
+    background-color: rgb(14, 14, 8);
+  }
+
+table{
+    border: 10px solid;
+    border-collapse: collapse;
+    max-width: 80%;
+    margin: auto;
+  }
+
+  td, th{
+      border: thin solid black
+  }
+
+caption{
+    font-variant: small-caps;
+    font-weight: bold;
+    padding-top: 1%;
+}
+
+  tr:nth-child(odd){
+      background-color: var(--background-odd)
+  }
+
+  tr:nth-child(even){
+    background-color: var(--background-even)
+}
+
+li:nth-child(odd){
+    background-color: var(--background-odd)
+}
+
+li:nth-child(even){
+    background-color: var(--background-even)
+}
+
+ol{
+    margin-left: 50%;
+    padding-left: 0.05%;
+}
+
+form:first-line{
+    text-decoration: underline;
+}
+
+form{
+    float:none;
+}
