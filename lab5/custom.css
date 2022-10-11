@@ -22,6 +22,8 @@ html{
 }
 
 body{
+    display: grid; 
+    grid-template-areas: "nav" "header" "main" "footer";
     width: 90%;
     margin: auto;
     background-color: var(--main-bg-color-rgba);
@@ -51,6 +53,16 @@ nav, footer{
     background-color: var(--main-bg-color-rgba); 
     padding: 1% 0;
     text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+footer{
+    grid-area: footer;
+}
+
+main{
+    grid-area: main;
 }
 
   footer:hover { 
@@ -119,9 +131,18 @@ nav a{
 }
 
 nav {
+    grid-area: nav;
+    grid-template-areas: none;
     border: thin solid yellow;
     background-color: white;
-    text-align: center;
+} 
+main{
+    grid-area: main;
+}
+
+nav#nav{
+    nav-up: auto;
+    grid-area: span;
 }
 
 nav:hover{
@@ -174,3 +195,50 @@ form:first-line{
 form{
     float:none;
 }
+
+.nav{
+   -ms-flex-align: center;     
+}
+
+.button:hover{
+  background: #175a0e;
+  color: #fff;
+  border: 1px solid rgb(15, 77, 23);
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px rgb(14, 54, 19);
+  text-shadow: none;
+}
+
+input[type="radio"]{
+    width: 3em;
+    height: 3rem;
+    background-color: green;   
+}
+
+input[type="checkbox"] {
+    width: 3em;
+    height: 3rem;
+    border-radius: 2em;
+}
+
+input[type="text"]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px;
+    box-sizing: border-box;
+  }
+
+  .contact{
+    font-size: medium;
+    color:  #cce639;
+  }
+
+  .radio{
+    font-size: medium;
+    color:  #cce639;
+  }
+
+  .checkbox{
+    font-size: medium;
+    color: #cce639;
+  }
