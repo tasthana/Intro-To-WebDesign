@@ -88,6 +88,33 @@
         <h1>CS 008-<em>B</em> Fall 2022</h1>
         <h2>Tushar Asthana - Site map</h2>
         <p><a href="ADMIN/admin.php">My Admin Folder</a></p>
+        
+        <section class="grid-layout">
+            <h2 class="header">Lab Six - Responsive Design.</h2>
+            <section class="public-files">
+                <h3>Public Files</h3>
+                <p><a href="lab6/detail.php">detail.php</a></p> 
+                <p><a href="lab6/form.php">form.php</a></p>
+                <p><a href="lab6/index.php">index.php</a></p>
+            </section>
+
+            <section class="supporting-files">
+                <h3>Supporting files</h3>
+                <p><a href="lab6/css/custom.css">custom.css</a> </p>
+                <p><a href="lab6/css/custom-phone.css">custom-phone.css</a> </p>
+                <p><a href="lab6/css/custom-tablet.css">custom-tablet.css</a> </p>
+                
+                <p><a href="lab6/images/wireframe.png">wireframe desktop</a></p>
+                <p><a href="lab6/images/phone-wireframe.png">wireframe phone</a></p>
+                <p><a href="lab6/images/wireframe-tablet.png">wireframe tablet</a></p>
+            </section>
+
+            <section class="grader-notes">
+                <h3>Notes to grader</h3>
+                <p></p>
+            </section>
+        </section>
+
 
         <section class="grid-layout">
             <h2 class="header">Lab Five - Adding More Style.</h2>
@@ -169,7 +196,7 @@
         </section>
 
         <section class="grid-layout">
-            <h2>Lab one - Setting up my sitemap.</h2>
+            <h2>Lab one - Setting Up My Sitemap.</h2>
             <section class="public-files">
                 <h3>Public Files</h3>
                 <p><a href="test-page.php">Testing Page</a></p>      
