@@ -14,7 +14,7 @@ header h2 {
 }
 
 figure{
-    float: center; 
+    float:none; 
 }
 
 img{
@@ -45,11 +45,11 @@ figcaption{
 
 
 .go-left{
-    float: center;
+    float: none;
     margin-right: 1em;
 }
 .go-right{
-    float: center;
+    float: none;
     margin-right: 1em;
 }
 
