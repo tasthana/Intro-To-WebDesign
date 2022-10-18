@@ -1,0 +1,251 @@
+
+
+:root{
+    --main-bg-color-rgba: #7f976b;
+    --main-bg-color: whitesmoke;
+    --main-text-color: #ffffff; 
+    --background-odd: #6581ff; 
+    --background-even: #6a75a5;
+}
+
+*{
+    margin:  2% 2% 2% 2%;
+
+    padding: 0%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+html{
+    background-image: url(../images/bg.jpg);
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    
+}
+
+body{
+    display: grid; 
+    grid-template-areas: "nav" "header" "main" "footer";
+    width: 90%;
+    margin: auto;
+    background-color: var(--main-bg-color-rgba);
+    color: var(--main-text-color);
+    opacity: .8;
+}
+
+header h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+header h2 {
+    text-align: center;
+}
+
+figure{
+    float: left; 
+    text-align: center; 
+    width:20%;
+}
+
+img{
+   max-width: 100%;
+}
+
+nav, footer{
+    background-color: var(--main-bg-color-rgba); 
+    padding: 1% 0;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+footer{
+    grid-area: footer;
+}
+
+main{
+    grid-area: main;
+}
+
+  footer:hover { 
+    background-color: rgb(216, 216, 124);
+  }
+  a:hover{
+    background-color: rgb(216, 216, 124); 
+ }
+
+
+p{
+    text-indent: 5%;
+    max-width: 75ch;
+}
+
+cite{
+    font-size: xx-small;
+}
+
+figure {
+    border: 1.5em solid rgb(18, 20, 19);
+    padding: 10%;
+    font-size: smaller;
+    
+}
+figure {
+    width: 30%;
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+    text-indent: 0;
+    border: thin silver solid;
+    margin: 0.5em;
+    padding: 0.5em;
+  }
+  img.scaled {
+    width: 100%;
+  }
+
+figcaption{
+    font-size: medium;
+    color: black;
+    max-width: 75ch;
+}
+
+.rounded{
+    border-radius: 2%;
+}
+
+.go-left{
+    float: left;
+    margin-right: 1em;
+}
+.go-right{
+    float: right;
+    margin-right: 1em;
+}
+
+h2#h2{
+    text-align: right;
+}
+
+nav a:link{
+    background-color: #fff;
+    color: #009;
+    text-decoration: none;
+  }
+
+nav a{
+    display: inline-block;
+    width: 19%;
+}
+
+nav {
+    grid-area: nav;
+    grid-template-areas: none;
+    border: thin solid yellow;
+    background-color: white;
+} 
+main{
+    grid-area: main;
+}
+
+nav#nav{
+    nav-up: auto;
+    grid-area: span;
+}
+
+nav:hover{
+    text-decoration: underline;
+    background-color: rgb(14, 14, 8);
+  }
+
+table{
+    border: 15em;
+    border-collapse: collapse;
+    margin: auto;
+  }
+
+  td, th{
+      border: thin solid black
+  }
+
+caption{
+    font-variant: small-caps;
+    font-weight: bold;
+    padding-top: 1%;
+}
+
+  tr:nth-child(odd){
+      background-color: var(--background-odd)
+  }
+
+  tr:nth-child(even){
+    background-color: var(--background-even)
+}
+
+li:nth-child(odd){
+    background-color: var(--background-odd)
+}
+
+li:nth-child(even){
+    background-color: var(--background-even)
+}
+
+ol{
+    margin-left: 50%;
+    padding-left: 0.05%;
+}
+
+form:first-line{
+    text-decoration: underline;
+}
+
+form{
+    float:none;
+}
+
+.nav{
+   -ms-flex-align: center;     
+}
+
+.button:hover{
+  background: #175a0e;
+  color: #fff;
+  border: 1.5em solid rgb(15, 77, 23);
+  border-radius: 23em;
+  box-shadow: 7.5em 7.5em 7.5em rgb(14, 54, 19);
+  text-shadow: none;
+}
+
+input[type="radio"]{
+    width: 3em;
+    height: 3rem;
+    background-color: green;   
+}
+
+input[type="checkbox"] {
+    width: 3em;
+    height: 3rem;
+    border-radius: 2em;
+}
+
+input[type="text"]{
+    width: 100%;
+    padding: 18em 30em;
+    margin: 20em;
+    box-sizing: border-box;
+  }
+
+  .contact{
+    font-size: medium;
+    color:  #cce639;
+    border: 0em;
+  }
+
+  .radio{
+    font-size: medium;
+    color:  #cce639;
+  }
+
+  .checkbox{
+    font-size: medium;
+    color: #cce639;
+  }
