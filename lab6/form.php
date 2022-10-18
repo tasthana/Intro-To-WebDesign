@@ -118,7 +118,7 @@
 
             <section>
                 <h2>Favorite Tennis Picture</h2>
-                <figure class="go-right">
+                <figure class="go-left">
                     <img class="rounded" alt ="Big Four" src="images/fed.jpg">
                     <figcaption><cite><a href= "" target="_blank"></a></cite>Roger Federer's Instagram</figcaption>
                 </figure>
