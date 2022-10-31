@@ -90,6 +90,38 @@
         <p><a href="ADMIN/admin.php">My Admin Folder</a></p>
         
         <section class="grid-layout">
+            <h2 class="header">Lab Seven - Arrays and includes.</h2>
+            <section class="public-files">
+                <h3>Public Files</h3>  
+                <p><a href="lab7/array.php">array.php</a></p>
+                <p><a href="lab7/detail.php">detail.php</a></p>
+                <p><a href="lab7/form.php">form.php</a></p> 
+                <p><a href="lab7/index.php">index.php</a></p>            
+            </section>
+
+            <section class="supporting-files">
+                <h3>Supporting files</h3>
+                <p><a href="lab7/css/custom.css">custom.css</a> </p>
+                <p><a href="lab7/css/custom-phone.css">custom-phone.css</a> </p>
+                <p><a href="lab7/css/custom-tablet.css">custom-tablet.css</a> </p>
+                
+                <p><a href="lab7/footer.php">footer.php</a></p>
+                <p><a href="lab7/header.php">header.php</a></p>
+                <p><a href="lab7/nav.php">nav.php</a></p>
+                <p><a href="lab7/top.php">top.php</a></p>
+                
+                <p><a href="lab7/images/wireframe.png">wireframe desktop</a></p>
+                <p><a href="lab7/images/phone-wireframe.png">wireframe phone</a></p>
+                <p><a href="lab7/images/wireframe-tablet.png">wireframe tablet</a></p>
+            </section>
+
+            <section class="grader-notes">
+                <h3>Notes to grader</h3>
+                <p></p>
+            </section>
+        </section>
+
+        <section class="grid-layout">
             <h2 class="header">Lab Six - Responsive Design.</h2>
             <section class="public-files">
                 <h3>Public Files</h3>
@@ -111,7 +143,9 @@
 
             <section class="grader-notes">
                 <h3>Notes to grader</h3>
-                <p></p>
+                <p>Forgot to submit message on Github when uploading index,detail, and form files.
+                    Re-uploaded all changes at the very end of the lab. All my HTML validator issues comes from given code. 
+                </p>
             </section>
         </section>
 
