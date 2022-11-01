@@ -7,6 +7,12 @@
     ?>" href="index.php">Home</a>
 
     <a class= "<?php
+    if ($pathParts['filename'] == "array"){
+        print 'activePage';
+}
+    ?>" href="array.php">French&nbsp;Open</a>
+
+    <a class= "<?php
     if ($pathParts['filename'] == "detail"){
         print 'activePage';
 }
