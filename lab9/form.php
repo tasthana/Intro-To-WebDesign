@@ -1,14 +1,12 @@
 <?php
     include 'top.php';
 
+    $dataIsGood = true;
     $email = '';
     $rock = 'false';
     $paper = 'false';
     $scissor = 'false'; 
-    $couple = 'false';
-    $few = 'false';
-    $every = 'false';
-
+    $dedicated = 'false';
 
     function getData($field) {
         if (!isset ($_POST[$field])) {
@@ -21,6 +19,14 @@
         }
         return $data;
     }
+
+    function verifyAlphaNum($testString) {
+        // Check for letters, numbers and dash, period, space and single quote only.
+        // added & ; and # as a single quote sanitized with html entities will have 
+        // this in it bob's will be come bob's
+        return (preg_match ("/^([[:alnum:]]|-|\.| |\'|&|;|#)+$/", $testString));
+    }
+
 ?>
         <main>
         <h1>Survey</h1>
@@ -31,16 +37,47 @@
 
                 <?php
                 if($_SERVER["REQUEST_METHOD"] == 'POST'){
+
+                    //sanitize 
                     $email = getData('txtEmail');
 
                     $rock = (int) getData('chkRock'); 
                     $paper = (int) getData('chkPaper'); 
                     $scissor = (int) getData('chkScissor'); 
 
-                    $couple = getData('radCoupleDays'); 
-                    $few = getData('radFewDays'); 
-                    $every = getData('radEveryDays'); 
-                }
+                    $dedicated = getData('radCoupleDays');  
+
+                    //validate 
+                    $dataIsGood = true;
+
+                    if($email =''){
+                        print '<p class = "wrong"> Please type in your email again. </p> ';
+                        $dataIsGood = false;
+                    } elseif(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+                        print '<p class = "wrong">Invalid characters, try again! </p> ';
+                        $dataIsGood = false; 
+                    } if ($dedicated != "Couple Days" AND $dedicated != "Few Days" AND $dedicated != "Every Days"){
+                        print '<p class = "wrong">Please tell us how dedicated you are to the game! </p> ';
+                        $dataIsGood = false; 
+                    }
+
+                    $totalChecked = 0; 
+
+                    if($rock != 1) $rock = 0;
+                    $totalChecked += $rock; 
+
+                    if($paper != 1) $paper = 0;
+                    $totalChecked += $paper; 
+
+                    if($scissor != 1) $scissor = 0;
+                    $totalChecked += $scissor; 
+
+                    if($totalChecked == 0){
+                        print '<p class = "wrong">Please choose one adjective that describes you! </p> ';
+                        $dataIsGood = false; 
+                    }
+
+                } //ends form submitted 
                 ?>
             </section>
 
