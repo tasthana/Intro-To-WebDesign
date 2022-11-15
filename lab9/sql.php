@@ -17,6 +17,14 @@
         )
     </pre>
 
+    <h2>Insert Data</h2>
+        <pre>
+        INSERT INTO tblBestTennisStars(fldRank, fldName, fldPoints) VALUES 
+        ('1', 'Carlos Alcaraz', 'At 19 years old, Alcaraz has 6,740 points.'),
+        ('2', 'Casper Rudd', 'At 23 years old, Rudd has 5,850 points.'),
+        ('3', 'Rafael Nadal', 'At 36 years old, Nadal has 5,810 points.')
+        </pre>
+
     <pre>
     CREATE TABLE tblAnswers(
         pmkAnswers int(15)NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -28,12 +36,12 @@
         )
     </pre>
 
-    <h2>Insert Data</h2>
+    <h2> Insert Data </h2>
     <pre>
-    INSERT INTO tblBestTennisStars(fldRank, fldName, fldPoints) VALUES 
-    ('1', 'Carlos Alcaraz', 'At 19 years old, Alcaraz has 6,740 points.'),
-    ('2', 'Casper Rudd', 'At 23 years old, Rudd has 5,850 points.'),
-    ('3', 'Rafael Nadal', 'At 36 years old, Nadal has 5,810 points.')
+    INSERT INTO tblFavoriteWildlife
+    (pmkAnswers, fldEmail, fldDedicated, fldRock, fidPaper, fldScissor)
+    VALUES
+    ('tasthana@uvm.edu', 'Every Days', 0, 0,1);
     </pre>
 
     <h2>Select Records</h2>

@@ -50,7 +50,7 @@
                     //validate 
                     $dataIsGood = true;
 
-                    if($email =''){
+                    if($email ==''){
                         print '<p class = "wrong"> Please type in your email again. </p> ';
                         $dataIsGood = false;
                     } elseif(!filter_var($email, FILTER_VALIDATE_EMAIL)){
@@ -73,9 +73,27 @@
                     $totalChecked += $scissor; 
 
                     if($totalChecked == 0){
-                        print '<p class = "wrong">Please choose one adjective that describes you! </p> ';
+                        print '<p class="wrong"> Please choose one adjective that describes you! </p>';
                         $dataIsGood = false; 
                     }
+
+                    //save data 
+                    if($dataIsGood){
+                        try{
+                            $sql ='INSERT INTO tblAnswers (fldEmail, fldDedicated, fldRock, fldPaper, fldScissor) VALUES (?,?,?,?,?)';
+                            $staement = $pdo->prepare($sql);
+                            $data = array($email, $dedicated, $rock, $paper, $scissor);
+
+                            if($statement->execute($data)){
+                                $message = '<h2> Thank you, your information was saved succesfully. </h2>';
+                            } else{
+                                $message = '<p> Something went wrong, records not saved. </p>';
+                            }
+                        }catch(PDOException $e){
+                            $message = '<p> Something went wrong, contact your administrator. </p>';
+                        }
+                    }
+
 
                 } //ends form submitted 
                 ?>
@@ -115,19 +133,19 @@
                         <legend>What kind of player are you?</legend>
                         <p>
                             <input id="chkRock" name="chkRock" tabindex="510"
-                            type="checkbox" value="1" <? php if($rock) print 'checked'; ?>>
+                            type="checkbox" value="1" <?php if($rock) print 'checked'; ?>>
                             <label for="chkRock">Rock</label>
                         </p>
 
                         <p>
                             <input id="chkPaper" name="chkPaper" tabindex="520"
-                            type="checkbox" value="1" <? php if($paper) print 'checked'; ?>>
+                            type="checkbox" value="1" <?php if($paper) print 'checked'; ?>>
                             <label for="chkPaper">Paper</label>
                         </p>
 
                         <p>
                             <input id="chkScissor" name="chkScissor" tabindex="530"
-                            type="checkbox" value="1" <? php if($scissor) print 'checked'; ?>>
+                            type="checkbox" value="1" <?php if($scissor) print 'checked'; ?>>
                             <label for="chkScissor">Scissor</label>
                         </p>
                     </fieldset>
@@ -136,7 +154,7 @@
                         <legend>How often do you play tennis?</legend>
                         <p>
                             <input type="radio" id="radCoupleDays"
-                            name="radPick" value="Couple" tabindex="410" required <?php if($dedicated == "Couple Days") print 'checked';?> >
+                            name="radPick" value="Couple" tabindex="410" required <?php if($dedicated == "Couple Days") print 'checked';?>>
                             <label class="radio-field" for="radCoupleDays">Couple Days</label>
                         </p>
 
