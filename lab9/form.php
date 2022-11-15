@@ -106,7 +106,7 @@
                         <p>
                             <label class="required" for="txtEmail" >Email</label>
                             <input id="txtEmail" maxlength="50" name="txtEmail"
-                            onfocus="this.select()" tabindex="310" type="text" value=""
+                            onfocus="this.select()" tabindex="310" type="text" value="<?php print $email; ?>"
                             required>
                         </p>
                     </fieldset>
@@ -115,19 +115,19 @@
                         <legend>What kind of player are you?</legend>
                         <p>
                             <input id="chkRock" name="chkRock" tabindex="510"
-                            type="checkbox" value="1">
+                            type="checkbox" value="1" <? php if($rock) print 'checked'; ?>>
                             <label for="chkRock">Rock</label>
                         </p>
 
                         <p>
                             <input id="chkPaper" name="chkPaper" tabindex="520"
-                            type="checkbox" value="1">
+                            type="checkbox" value="1" <? php if($paper) print 'checked'; ?>>
                             <label for="chkPaper">Paper</label>
                         </p>
 
                         <p>
                             <input id="chkScissor" name="chkScissor" tabindex="530"
-                            type="checkbox" value="1">
+                            type="checkbox" value="1" <? php if($scissor) print 'checked'; ?>>
                             <label for="chkScissor">Scissor</label>
                         </p>
                     </fieldset>
@@ -136,19 +136,19 @@
                         <legend>How often do you play tennis?</legend>
                         <p>
                             <input type="radio" id="radCoupleDays"
-                            name="radPick" value="Couple" tabindex="410" required>
+                            name="radPick" value="Couple" tabindex="410" required <?php if($dedicated == "Couple Days") print 'checked';?> >
                             <label class="radio-field" for="radCoupleDays">Couple Days</label>
                         </p>
 
                         <p>
                             <input type="radio" id="radFewDays"
-                            name="radPick" value="Few" tabindex="410" required>
+                            name="radPick" value="Few" tabindex="410" required  <?php if($dedicated == "Few Days") print 'checked';?>>
                             <label class="radio-field" for="radFewDays">Few Days</label>
                         </p>
 
                         <p>
                             <input type="radio" id="radEveryDays"
-                            name="radPick" value="Every" tabindex="410" required>
+                            name="radPick" value="Every" tabindex="410" required  <?php if($dedicated == "Every Days") print 'checked';?>>
                             <label class="radio-field" for="radEveryDays">Every Day</label>
                         </p>
 
