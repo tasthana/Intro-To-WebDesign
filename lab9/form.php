@@ -1,5 +1,26 @@
 <?php
     include 'top.php';
+
+    $email = '';
+    $rock = 'false';
+    $paper = 'false';
+    $scissor = 'false'; 
+    $couple = 'false';
+    $few = 'false';
+    $every = 'false';
+
+
+    function getData($field) {
+        if (!isset ($_POST[$field])) {
+            $data = "";
+        } 
+
+        else {
+            $data = trim($_POST[$field]);
+            $data = htmlspecialchars($data);
+        }
+        return $data;
+    }
 ?>
         <main>
         <h1>Survey</h1>
@@ -7,6 +28,20 @@
             <section>
                 <h2>Judging everyone based off of their favorite tennis player of the past decade.</h2>
                 <p> Answer these few questions for a judgement!</p>
+
+                <?php
+                if($_SERVER["REQUEST_METHOD"] == 'POST'){
+                    $email = getData('txtEmail');
+
+                    $rock = (int) getData('chkRock'); 
+                    $paper = (int) getData('chkPaper'); 
+                    $scissor = (int) getData('chkScissor'); 
+
+                    $couple = getData('radCoupleDays'); 
+                    $few = getData('radFewDays'); 
+                    $every = getData('radEveryDays'); 
+                }
+                ?>
             </section>
 
             <section>
