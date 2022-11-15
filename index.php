@@ -90,6 +90,42 @@
         <p><a href="ADMIN/admin.php">My Admin Folder</a></p>
         <p><a href="ADMIN/table-viewer.php?getDatabase=">Database Viewer</a></p>
         
+
+        <section class="grid-layout">
+            <h2 class="header">Lab Nine - Saving forms data.</h2>
+            <section class="public-files">
+                <h3>Public Files</h3>
+                <p><a href="lab9/array.php">array.php</a></p>
+                <p><a href="lab9/detail.php">detail.php</a></p> 
+                <p><a href="lab9/form.php">form.php</a></p> 
+                <p><a href="lab9/index.php">index.php</a></p>
+            </section>
+
+            <section class="supporting-files">
+                 <h3>Supporting files</h3>
+                <p><a href="lab9/css/custom.css">custom.css</a> </p>
+                <p><a href="lab9/css/custom-phone.css">custom-phone.css</a> </p>
+                <p><a href="lab9/css/custom-tablet.css">custom-tablet.css</a> </p>
+                
+                <p><a href="lab9/sql.php">DB SQL Statements</a> </p>
+                <p><a href="lab9/records.png">DB records</a> </p>
+                
+                <p><a href="lab9/footer.php">footer.php</a></p>
+                <p><a href="lab9/header.php">header.php</a></p>
+                <p><a href="lab9/nav.php">nav.php</a></p>
+                <p><a href="lab9/top.php">top.php</a></p>
+                
+                <p><a href="lab9/images/wireframe.png">wireframe desktop</a></p>
+                <p><a href="lab9/images/phone-wireframe.png">wireframe phone</a></p>
+                <p><a href="lab9/images/wireframe-tablet.png">wireframe tablet</a></p>
+            </section>
+            
+            <section class="grader-notes">
+                <h3>Notes to grader</h3>
+                <p></p>
+            </section>
+        </section>
+        
         <section class="grid-layout">
             <h2 class="header">Lab Eight - Database to display data.</h2>
             <section class="public-files">
@@ -152,7 +188,7 @@
             </section>
 
             <section class="grader-notes">
-                <h3>Notes to grader</h3>
+                <h3>All errors stem from given php code.</h3>
                 <p></p>
             </section>
         </section>
